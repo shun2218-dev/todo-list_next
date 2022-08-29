@@ -41,6 +41,7 @@
   width: 80%;
   justify-content: space-between;
   gap: 3%;
+  flex-grow: 1;
 }
 
 .textAlign_center {
@@ -56,4 +57,10 @@
 .mpNone {
   margin: 0;
   flex-grow: 1;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

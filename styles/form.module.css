@@ -1,0 +1,21 @@
+.taskForm {
+  flex-grow: 1;
+}
+
+.addBtn {
+  margin-left: 1rem;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.addBtn:hover {
+  background-color: darkgray;
+}
+
+.input {
+  height: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}

@@ -4,6 +4,8 @@ import Router, { useRouter } from "next/router";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import Layout from "../components/layout";
 import useStrageData from "../hooks/useStorageData";
+import styles from "../styles/form.module.css";
+import utilStyles from "../styles/utils.module.css";
 
 const Form: NextPage = () => {
   const router = useRouter();
@@ -33,9 +35,21 @@ const Form: NextPage = () => {
   return (
     <Layout title="Form">
       <h1>Task form</h1>
-      <form action="" onSubmit={(e) => submitHandler(e)}>
-        <input type="text" name="task" ref={inputRef} autoFocus />
-        <button type="submit">追加</button>
+      <form
+        className={`${styles.taskForm} ${utilStyles.flex_center}`}
+        action=""
+        onSubmit={(e) => submitHandler(e)}
+      >
+        <input
+          type="text"
+          name="task"
+          ref={inputRef}
+          autoFocus
+          className={`${styles.input}`}
+        />
+        <button type="submit" className={`${styles.addBtn}`}>
+          追加
+        </button>
       </form>
     </Layout>
   );
