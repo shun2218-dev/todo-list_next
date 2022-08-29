@@ -14,6 +14,12 @@
   padding: 5% 3%;
 }
 
+@media (prefers-color-scheme: light) {
+  .card {
+    border: 1px solid black;
+  }
+}
+
 .card__item::-webkit-scrollbar {
   width: 10px;
 }
